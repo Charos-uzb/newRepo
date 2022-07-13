@@ -1,3 +1,4 @@
-# newRepo
+# Discover
+
 # ejs-practicum
-# ejs-practicum
+
