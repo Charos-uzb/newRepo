@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+            
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+:root {
+  --first-clr: #5a56e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first-clr {
+  color: var(--first-clr);
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  
+}
+
+.landing-page {
+  padding:0;
+  user-select: none;
+}
+.landing-page .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.landing-page .content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-page .content .text-cont {
+  width: 60%;
+}
+.landing-page .content .text-cont .header {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.landing-page .content .text-cont .description {
+  font-size: 16px;
+  margin: 30px 0;
+  color: #777;
+  font-weight: 400;
+  width: 80%;
+}
+.landing-page .content .text-cont .btn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  padding: .6rem 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, .1);
+  transition: all .2s linear;
+}
+.landing-page .content .text-cont .btn-discover {
+  min-width: 160px;
+  margin-right: 5px;
+  color: #FFF;
+  background-color: var(--first-clr);
+}
+.landing-page .content .text-cont .btn-discover:hover {
+  border-color: var(--first-clr);
+  background-color: transparent;
+  color: var(--first-clr);
+}
+.landing-page .content .text-cont .btn-play {
+  color: var(--first-clr);
+}
+.landing-page .content .text-cont .btn-play:hover {
+  border-color: var(--first-clr);
+  background-color: var(--first-clr);
+  color: #FFF;
+}
+
+.landing-page .content .img-cont {
+  width: 35%;
+  position: relative;
+}
+.landing-page .content .img-cont::before,
+.landing-page .content .img-cont::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: var(--first-clr);
+}
+.landing-page .content .img-cont::before {
+  top: -5%;
+  left: -7%;
+  width: 100%;
+  height: 60px;
+}
+.landing-page .content .img-cont::after {
+  height: 25vh;
+  width: 25vh;
+  max-width: 180px;
+  max-height: 180px;
+  bottom: -5%;
+  left: -5%;
+  border-radius: 0 0 0 15px;
+}
+.landing-page .content .img-cont .img {
+  width: 100%;
+  display: block;
+  border-radius: 0 0 0 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+}
+
+@media screen and (max-width: 650px) {
+  .landing-page .content {
+    flex-direction: column;
+  }
+  .landing-page .content .text-cont,
+  .landing-page .content .text-cont .description {
+    width: 100%;
+  }
+  .landing-page .content .text-cont {
+    text-align: center;
+  }
+  .landing-page .content .img-cont {
+    width: 80%;
+    margin-top: 80px;
+  }
+}
+.div{
+    width: 1600px;
+    height: auto;
+    border: 1px solid red;
+    position: absolute;
+}
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Nanum+Gothic&family=Open+Sans:wght@300&family=Rubik+Moonrocks&display=swap');
+
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-red: #FF4949;
+    --color-purple: #541690;
+    --color-orange: #FF8D29;
+    --color-yellow: #FFCD38;
+
+    --font-lg: 38px;
+    --font-md: 24px;
+    --font-sm: 15px;
+    --font-xs: 9px;
+
+    --size-lg: 1280px;
+    --size-md: 976px;
+    --size-sm: 768px;
+    --size-xs: 500px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    height: 100%;
+    background: rgb(2, 0, 29);
+    background: linear-gradient(135deg, rgba(2, 0, 29, 1) 30%, rgba(103, 9, 121, 1) 52%, rgba(0, 185, 255, 1) 81%);
+}
+
+.container-table {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 5% 5%;
+    color: var(--color-yellow);
+}
+
+.containerTable-lblTitle {
+    width: 30%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--color-red);
+}
+
+
+.container-table th:first-child {
+    width: 10%;
+}
+
+.containerTable-lblValue {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.11);
+    color: var(--color-orange);
+    transition: box-shadow .5s, transform .5s, color .5s;
+}
+
+.containerTable-lblValue:hover {
+    box-shadow: 0 10px 10px var(--color-red);
+    transform: translateY(-10px);
+    background-color: var(--color-purple);
+    color: var(--color-yellow);
+    font-weight: bolder;
+}
+
+.containerTable-lblValue:last-child:hover {
+    box-shadow:none;
+    transform: none;
+    font-weight: none;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.container-table > tbody > tr:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.tableValue-btnOption {
+    width: 30%;
+    height: 35px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: var(--color-orange);
+    box-shadow: 0 0 10px var(--color-orange) inset;
+}
+
+.tableValue-btnOption:hover {
+    box-shadow: 0 0 5px var(--color-orange);
+    background-color: rgba(255, 255, 255, 0.127);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .containerTable-lblTitle:last-child {
+        display: none;
+    }
+
+    .containerTable-lblValue:last-child {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    *[class *= "lbl"] {
+        font-size: var(--font-xs);
+    }
+}
+#container{
+    display: none;
+}
+</style>
+<body> 
+    <div id="container" class="container">
+                    <table class="container-table">
+                        <thead>
+                            <tr>
+                                <th class="containerTable-lblTitle">#</th>
+                                <th class="containerTable-lblTitle">Name</th>
+                                <th class="containerTable-lblTitle">Genere</th>
+                                <th class="containerTable-lblTitle">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody class="containerTable-body">
+                    <tr>
+                    <td class="containerTable-lblValue">`+ (i + 1) + `</td>
+                    <td class="containerTable-lblValue">Lost City</td>
+                    <td class="containerTable-lblValue">Action</td>
+                    <td class="containerTable-lblValue">
+                        <button class="tableValue-btnOption">Details</button>
+                        <button class="tableValue-btnOption">Edit</button>
+                        <button class="tableValue-btnOption">Delete</button>
+                    </td>
+                </tr>
+                        </tbody>
+                    </table>
+    </div>         
+    <!--  -->
+    <section class="landing-page"> 
+                <div id="info" class="container">
+                <div class="content">
+                    <div class="text-cont">
+                    <h1 class="header">
+                        <span class="first-clr">Discover</span> new Things and <span class="first-clr">Enjoy</span> your <span class="first-clr">Life</span>
+                    </h1>
+                        <%info.forEach(information=>{%>
+                            <p class="description">  <%= information.info%> </p>
+                            <%})%>
+                        <button id="btn" class="btn btn-discover">Discover</button>
+                        <button class="btn btn-play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    </div>
+                    <div class="img-cont">
+                        <%info.forEach(information=>{%>
+                    <img class="img" src="<%= information.img%>">
+                    <%})%>
+                    </div>
+                </div>
+                </div>
+                </section> 
+      <script>
+    let body = document.querySelector(".containerTable-body");
+  body.innerHTML = "";
+  for (let i = 0; i < 20; i++) {
+      body.innerHTML += `
+          <tr>
+          <td class="containerTable-lblValue">`+ (i + 1) + `</td>
+          <td class="containerTable-lblValue">Lost City</td>
+          <td class="containerTable-lblValue">Action</td>
+          <td class="containerTable-lblValue">
+              <button class="tableValue-btnOption">Details</button>
+              <button class="tableValue-btnOption">Edit</button>
+              <button class="tableValue-btnOption">Delete</button>
+          </td>
+      </tr>
+          `;
+  }
+  btn.addEventListener("click",()=>{
+    let selectedCountry =  prompt("Are you ready for change?");
+    container.style.display ="block"
+    info.style.display ="none"
+})
+      </script>
+</body>
+</html>
